@@ -7,9 +7,14 @@ int main() {
     getline(cin, texto);
     
     int largo = texto.length();
-    
-    for (int i = 0; i < largo; i++) {
-        cout << texto[i];
+
+    for (char letraActual = 'a'; letraActual <= 'z'; letraActual++) {
+        
+        for (int i = 0; i < largo; i++) {
+            if (texto[i] == letraActual) {
+                cout << texto[i];
+            }
+        }
     }
     cout << endl;
     
